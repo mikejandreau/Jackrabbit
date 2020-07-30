@@ -3,10 +3,11 @@
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
-  padding: 0 2rem;
+  // padding: 0 2rem;
+  // margin: 0 -2rem;
   max-width: 64em;
   margin: 0 auto;
-  // border: 1px solid red;
+  // border: 1px solid red;S
 }
 
 .site-main {
@@ -14,6 +15,7 @@
   flex-direction: column;
   flex-basis: 100%;
   flex: 2;
+  padding: 0 2rem;
   // background: tan;
 }
 
@@ -22,20 +24,19 @@
   flex-direction: column;
   flex-basis: 100%;
   flex: 1;
+  padding: 0 2rem;
   // background: orange;
 }
 
 
 
 // responsive rows
-
-
 @media screen and (min-width: 48em) {
-    .flex-row {
+  .flex-row {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 100%;
+    // width: 100%;
     margin: 0 -2rem;
   }
 
@@ -67,6 +68,7 @@
   }
 
 }
+
 
 
 // @media screen and (min-width: 48em) {
