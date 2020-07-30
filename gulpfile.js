@@ -2,13 +2,15 @@
 var projectURL          = 'dev3';          // project URL, can be "localhost:3000" or something else 
 var styleSource         = './sass/style.scss';  // path to main SCSS file
 var styleDestination    = './';                 // location to save compiled CSS file
-var scriptSource        = './js/*.js';          // path to source JS files
-var scriptDestination   = './js/min';           // location to save compiled/minified JS file
+var scriptSource        = [ './js/src/class-helpers.js', 
+                            './js/src/navigation.js', 
+                            './js/src/scrollup.js' ]; // Path to JS vendor and custom files in order
+var scriptDestination   = './js';           // location to save compiled/minified JS file
 var scriptBabelPreset   = '@babel/env';         // ES6 preset
-var scriptFilename      = 'build.min.js';       // filename for compiled/minified JS
+var scriptFilename      = 'scripts.min.js';       // filename for compiled/minified JS
 var watchPathFiles      = './**/*.php';         // watch path for PHP template files
 var watchPathStyles     = './sass/**/*.scss';   // watch path for SCSS
-var watchPathScripts    = './js/*.js';          // watch path for JS
+var watchPathScripts    = './js/src/*.js';          // watch path for JS
 
 // GULP PLUGINS
 const { src, dest, watch } = require('gulp');

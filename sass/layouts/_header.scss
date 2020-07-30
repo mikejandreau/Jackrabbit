@@ -1,0 +1,13 @@
+.custom-logo-link {
+	display: block;
+	margin: 2rem auto 1rem;
+	max-width: 300px;
+}
+
+
+@media screen and (min-width: 48em) {
+
+	.custom-logo-link {
+		max-width: 500px;
+	}
+}

@@ -97,3 +97,81 @@
 		}
 	}
 }() );
+
+
+
+
+
+
+
+
+// CLASS HELPERS
+// Vanilla JS class toggling scripts for use without jQuery
+
+// hasClass
+function hasClass(elem, className) {
+    return new RegExp(' ' + className + ' ').test(' ' + elem.className + ' ');
+}
+
+// addClass
+function addClass(elem, className) {
+    if (!hasClass(elem, className)) {
+        elem.className += ' ' + className;
+    }
+}
+
+// removeClass
+function removeClass(elem, className) {
+    var newClass = ' ' + elem.className.replace(/[\t\r\n]/g, ' ') + ' ';
+    if (hasClass(elem, className)) {
+        while (newClass.indexOf(' ' + className + ' ') >= 0) {
+            newClass = newClass.replace(' ' + className + ' ', ' ');
+        }
+        elem.className = newClass.replace(/^\s+|\s+$/g, '');
+    }
+}
+
+// toggleClass
+function toggleClass(elem, className) {
+    var newClass = ' ' + elem.className.replace(/[\t\r\n]/g, " ") + ' ';
+    if (hasClass(elem, className)) {
+        while (newClass.indexOf(" " + className + " ") >= 0) {
+            newClass = newClass.replace(" " + className + " ", " ");
+        }
+        elem.className = newClass.replace(/^\s+|\s+$/g, '');
+    } else {
+        elem.className += ' ' + className;
+    }
+}
+
+(function($) {
+  "use strict"; // Start of use strict
+
+  // Smooth scrolling using jQuery easing
+  $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: (target.offset().top - 48)
+        }, 1000, "easeInOutExpo");
+        return false;
+      }
+    }
+  });
+
+// SCROLLUP BUTTON
+// show scrollup button after scrolling 300px
+// scrollToTopButton = document.getElementById("scrollUpButton");
+var showScrollToTop = function () {
+  var y = window.scrollY;
+  if (y >= 300) {
+    $("#scrollUpButton").addClass("show");
+  } else {
+    $("#scrollUpButton").removeClass("show");
+  }
+};
+window.addEventListener("scroll", showScrollToTop);
+
+})(jQuery); // End of use strict

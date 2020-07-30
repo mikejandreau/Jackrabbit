@@ -1,0 +1,78 @@
+.main-wrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0 2rem;
+  max-width: 64em;
+  margin: 0 auto;
+  // border: 1px solid red;
+}
+
+.site-main {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 2;
+  // background: tan;
+}
+
+.widget-area {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  // background: orange;
+}
+
+
+
+// responsive rows
+
+
+@media screen and (min-width: 48em) {
+    .flex-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 -2rem;
+  }
+
+  .flex-columns {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    padding: 0 2rem;
+  }
+
+  .one-third {
+    flex: 1;
+  }
+
+  .two-thirds {
+    flex: 2;
+  }
+
+  .one-quarter {
+    flex: 1;
+  }
+
+  .three-quarters {
+    flex: 3;
+  }
+
+  .one-half {
+    flex: 1;
+  }
+
+}
+
+
+// @media screen and (min-width: 48em) {
+
+// }
+
+// @media screen and (min-width: 62em) {
+
+// }
