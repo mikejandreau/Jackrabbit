@@ -11,19 +11,19 @@
 }
 
 .site-main {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-  flex: 2;
+  // display: flex;
+  // flex-direction: column;
+  // flex-basis: 100%;
+  // flex: 2;
   padding: 0 2rem;
   // background: tan;
 }
 
 .widget-area {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-  flex: 1;
+  // display: flex;
+  // flex-direction: column;
+  // flex-basis: 100%;
+  // flex: 1;
   padding: 0 2rem;
   // background: orange;
 }
@@ -32,6 +32,30 @@
 
 // responsive rows
 @media screen and (min-width: 48em) {
+  
+.site-main {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 2;
+  // padding: 0 2rem;
+  // background: tan;
+}
+
+.widget-area {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  // padding: 0 2rem;
+  // background: orange;
+}
+
+
+
+
+
+
   .flex-row {
     display: flex;
     flex-direction: row;

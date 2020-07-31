@@ -150,6 +150,12 @@ function jackrabbit_scripts() {
 
 	wp_enqueue_script( 'jackrabbit-scripts', get_template_directory_uri() . '/js/scripts.min.js', array(), _S_VERSION, true );
 
+
+
+	wp_enqueue_script( 'jackrabbit-scripts', 'https://kit.fontawesome.com/40534c227a.js', array(), _S_VERSION, true );
+	
+
+
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}

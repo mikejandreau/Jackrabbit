@@ -10,13 +10,13 @@
 
 .site-info {
 	margin: 0 auto;
-	padding: 0 1rem;
+	padding: 0 2rem;
 	width: 100%;
     max-width: 64em;
 }
 
 .copyright {
-	text-align: center;
+	// text-align: center;
 	font-size: .9rem;
 }
 
@@ -57,13 +57,13 @@
 		display: flex;
 	}
 
-	.site-info {
-		padding: 0 2rem;
-	}
+	// .site-info {
+	// 	padding: 0 2rem;
+	// }
 
 	.copyright {
 		flex: 1;
-		text-align: left;
+		// text-align: left;
 	}
 
 	.social-block {
