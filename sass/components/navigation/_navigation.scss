@@ -70,8 +70,13 @@
 		display: block;
 		text-decoration: none;
 		margin: 1rem 0;
-		// background: red;
+		color: #333;
 
+		&:hover,
+		&:focus,
+		&:visited {
+			color: #333;
+		}
 	}
 
 	.current_page_item > a,
